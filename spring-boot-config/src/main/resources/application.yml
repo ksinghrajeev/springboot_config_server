@@ -1,0 +1,19 @@
+app:
+  description: Welcome to ${app.name}
+  name: My app
+ 
+management.endpoints.web.exposure.include: '*'
+
+db:
+  connection: "{connectionString: 'http://---', userName: 'foo', password: 'pass'}"
+  port: 1200
+  host: 127.0.0.1
+spring:
+  config:
+    import: optional:configserver:http:localhost:8888
+my:
+  greeting: Hello
+  list:
+    values: one,two,three
+    
+spring.application.name: spring-boot-config

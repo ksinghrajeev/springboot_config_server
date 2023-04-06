@@ -1,0 +1,13 @@
+management.endpoints.web.exposure.include: '*'
+
+db:
+  connection: "{connectionString: 'http://---', userName: 'foo', password: 'pass'}"
+  port: 1200
+  host: 127.0.0.1
+spring:
+  config:
+    import: optional:configserver:http:localhost:8888
+my:
+  greeting: Hello from test
+  list:
+    values: one,two,three

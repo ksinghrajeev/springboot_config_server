@@ -1,0 +1,11 @@
+## YAML Template.
+---
+my:
+  greeting: Hello World from spring-boot-config microservice config server
+  list:
+    values: One, Two, Three
+
+db:
+  connection: "{connectionString: 'http://---', userName: 'foo', password: 'pass'}"
+  host: 127.0.0.1
+  port: 4000
